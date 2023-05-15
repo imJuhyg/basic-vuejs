@@ -18,7 +18,8 @@
     </header>
     <section id="events">
       <h2>Events in Action</h2>
-      <button v-on:click="add(10)">Add 10</button>
+      <button @click="add(10)">Add 10</button> <!-- @click == v-on:click -->
+                                               <!-- v-bind:value == :value -->
       <button v-on:click="reduce(5)">Subtract 5</button>
       <p>Result: {{ counter }}</p>
       <!--  v-model: Two-way binding 
